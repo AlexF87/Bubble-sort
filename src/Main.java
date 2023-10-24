@@ -6,7 +6,7 @@ public class Main {
         Random random = new Random();
         int[] arr = new int[random.nextInt(100)];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) (Math.floor(Math.random()*100) + 1);
+            arr[i] = (int) (Math.floor(Math.random() * 100) + 1);
 
         }
         arr = BubbleSort.sort(arr);

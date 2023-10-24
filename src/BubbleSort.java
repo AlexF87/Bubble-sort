@@ -4,13 +4,11 @@ public class BubbleSort {
         do {
             bool = true;
             for (int i = 0; i < arr.length - 1; i++) {
-                for (int j = i +1; j < arr.length; j++) {
-                    if (arr[i] > arr[j]) {
-                        int temp = arr[j];
-                        arr[j] = arr[i];
-                        arr[i] = temp;
-                        bool = false;
-                    }
+                if (arr[i] > arr[i + 1]) {
+                    int temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    bool = false;
                 }
             }
         } while (!bool);
