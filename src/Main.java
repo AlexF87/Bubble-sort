@@ -9,6 +9,7 @@ public class Main {
             arr[i] = (int) (Math.floor(Math.random()*100) + 1);
 
         }
+        arr = BubbleSort.sort(arr);
         System.out.println(Arrays.toString(arr));
 
     }
